@@ -1,0 +1,37 @@
+header {
+    background-color: #add;
+    padding: 1rem;
+}
+
+/* could be more clever way to style list in footer? */
+header section article:nth-child(2n),
+aside li:nth-last-child(2),
+footer ul>li>ul>li:nth-child(2n)
+{
+    background-color: #dde;
+}
+
+nav a:hover,
+header section article:nth-child(1) em,
+header section article:nth-child(3) em,
+aside li:nth-child(2n+1)
+{
+    color: #29c;
+}
+
+header section article:nth-child(2n) h2::before {
+    content: "*";
+    color: #06a;
+}
+
+aside li:first-child, aside li:last-child {
+    font-weight: bold;
+}
+
+a[href^="http"]::before {
+    content: "\0279A";
+}
+
+article p:nth-child(2n+1) {
+    color: #06a;
+}
